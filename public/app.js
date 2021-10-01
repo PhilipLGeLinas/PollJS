@@ -4,11 +4,11 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 
 // DB Config
-require('./config/db');
+require('./db');
 
 const app = express();
 
-const poll = require('./routes/poll');
+const poll = require('./poll');
 
 // Set public folder
 app.use(express.static(path.join(__dirname, 'public')));
