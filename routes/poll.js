@@ -15,6 +15,9 @@ const pusher = new Pusher({
 
 router.get('/', (req, res) => {
     Vote.find().then(votes => res.json({ success: true, votes: votes }));
+    Vote.db.dropCollection("votes", function(err, result) {
+        console.log(err);
+    })
 });
 
 router.post('/', (req, res) => {
