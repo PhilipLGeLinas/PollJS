@@ -1,0 +1,29 @@
+h1, h5, p {
+    text-align: center;
+}
+
+input[type="button"] {
+    height: 40px;
+    width: 40px;
+}
+
+#vote-form
+{
+    width:100%;
+    text-align: center;
+}
+
+#vote-form > p
+{
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#chartContainer {
+    display: none;
+}
+
+#thanks {
+    display: none;
+}
