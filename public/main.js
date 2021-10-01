@@ -8,7 +8,7 @@ for (let i = 0; i < btns.length; i++) {
         const choice = e.target.value;
         const data = {os: choice};
 
-        fetch('https://zealous-hodgkin-0bc5bd.netlify.app/poll', {
+        fetch('https://silly-fermat-f754c7.netlify.app/poll', {
             method: 'post',
             body: JSON.stringify(data),
             headers: new Headers({
@@ -19,7 +19,7 @@ for (let i = 0; i < btns.length; i++) {
 }
 
 const showResults = function() {
-    fetch('https://zealous-hodgkin-0bc5bd.netlify.app/poll').then(res => res.json()).then(data => {
+    fetch('https://silly-fermat-f754c7.netlify.app/poll').then(res => res.json()).then(data => {
         const votes = data.votes;
         const totalVotes = votes.length;
 
